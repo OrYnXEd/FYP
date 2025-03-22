@@ -9,18 +9,16 @@
 @prefix bibo:    <http://purl.org/ontology/bibo/> .  # For citations
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 
-<https://w3id.org/dqv-ontology>
+<https://tinyurl.com/4wu4h3da>
     a owl:Ontology ;
     rdfs:label "Data Quality Ontology" ;
     dcterms:title "Data Quality Ontology" ;
     dcterms:description "An ontology for describing data quality dimensions and metrics based on standardized vocabularies." ;
-    dcterms:creator <https://orcid.org/0000-0000-0000-0000> ;  # Replace with actual ORCID
     dcterms:created "2025-03-11"^^xsd:date ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    owl:versionIRI <https://w3id.org/dqv-ontology/1.0> ;
+    owl:versionIRI <https://tinyurl.com/4wu4h3da> ;
     owl:versionInfo "1.0" ;
-    prov:wasDerivedFrom <https://github.com/edwardmwanyali/ontology> ;
-    foaf:contributor "Contributor Name" ;
+    foaf:contributor "Rob Brennan" ;
     # Use dqv instead of custom terms
     owl:imports <http://www.w3.org/ns/dqv#> .
 
