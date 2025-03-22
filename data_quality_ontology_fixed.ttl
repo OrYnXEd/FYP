@@ -513,7 +513,7 @@ dqv:Metric a owl:Class ;
     rdfs:comment "A measurable aspect of data quality within a dimension." .
 
 
-<http://example.org/ontology> dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+<https://tinyurl.com/4wu4h3da> dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                dcterms:rights "Open Access" ;
                                dcterms:provenance "This ontology was created to support data quality assessment." .
 
@@ -546,4 +546,4 @@ dqv:Metric a owl:Class ;
     owl:versionInfo "1.0" ;
     dcterms:created "2025-03-11"^^xsd:date ;
     dcterms:bibliographicCitation "Edward Mwanyali, 'Data Quality Ontology', 2025, DOI:xxxxxx" ;
-    foaf:contributor "Contributor Name" .
+    foaf:contributor "Rob Brennan" .
