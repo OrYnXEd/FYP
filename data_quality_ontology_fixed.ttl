@@ -517,16 +517,18 @@ dqv:Metric a owl:Class ;
                                dcterms:rights "Open Access" ;
                                dcterms:provenance "This ontology was created to support data quality assessment." .
 
-<http://example.org/ontology#> rdf:type owl:Ontology ;
+<https://tinyurl.com/4b4etucb> rdf:type owl:Ontology ;
     dcterms:title "Data Quality Ontology" ;
     dcterms:description "An ontology for assessing data quality." ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    owl:versionIRI <http://example.org/ontology#1.0> ;
+    owl:versionIRI <https://tinyurl.com/4b4etucb> ;
     dcterms:creator "Edward Mwanyali" ;
     dcterms:created "2025-03-11"^^xsd:date ;
-    dcterms:namespace "http://example.org/ontology#" .
+    dcterms:namespace "https://tinyurl.com/4b4etucb#" .
+    dcat:accessURL <https://tinyurl.com/4wu4h3da> ;  # Structured metadata
+           dcat:downloadURL <https://tinyurl.com/4wu4h3da>;
 
-<http://example.org/ontology#> 
+<https://tinyurl.com/4wu4h3da> 
     owl:versionInfo "1.0" ;
     dcterms:created "2025-03-11"^^xsd:date ;
     dcterms:bibliographicCitation "Edward Mwanyali, 'Data Quality Ontology', 2025, DOI:xxxxxx" ;
@@ -535,12 +537,12 @@ dqv:Metric a owl:Class ;
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-<http://example.org/ontology> owl:imports <http://www.w3.org/2004/02/skos/core> .
+<https://tinyurl.com/4wu4h3da> owl:imports <http://www.w3.org/2004/02/skos/core> .
 
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-<http://example.org/ontology> 
+<https://tinyurl.com/4wu4h3da> 
     owl:versionInfo "1.0" ;
     dcterms:created "2025-03-11"^^xsd:date ;
     dcterms:bibliographicCitation "Edward Mwanyali, 'Data Quality Ontology', 2025, DOI:xxxxxx" ;
