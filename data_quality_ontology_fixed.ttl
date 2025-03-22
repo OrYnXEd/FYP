@@ -58,11 +58,6 @@ dqv:A1_accessibility_of_SPARQL_endpoint
         dqv:A5_dereferenced_forward-links .
 # note the above lines create new instances dqv:A2 etc for the metrics
 
-dqv:Bizeretal20098 a dqv:Dimension ;
-# this is wrong you are creatimng a new Dimension called dqv:Bizeretal20098. You should be creating a citation. If you want to do that in RDF natively use this https://www.dublincore.org/specifications/bibo/bibo/bibo.ttl
-    rdfs:label "Bizeretal.,2009[8]" ;
-    dqv:inDimension dqv:Flemming201018_Böhmetal201010 .
-
 dqv:Completeness a dqv:Dimension ;
     rdfs:label "Completeness" ;
     dqv:inDimension dqv:CM1_schema_completeness,
