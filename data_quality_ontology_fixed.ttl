@@ -46,18 +46,6 @@ dqv:A1_accessibility_of_SPARQL_endpoint
     rdfs:label "Accessibility of SPARQL endpoint" ;
     dcterms:description "Checks whether the server responds to SPARQL queries." .
 
-# Fix citation using BIBO
-<https://doi.org/10.1000/xyz123>  # Example DOI
-    a bibo:Article ;
-    bibo:authorList "Bizer, C., Heath, T., Berners-Lee, T." ;
-    dcterms:title "Linked Data - The Story So Far" ;
-    bibo:issued "2009"^^xsd:gYear .
-        dqv:A2_accessibility_of_the_RDF_dumps,
-        dqv:A3_dereferenceability_of_the_URI,
-        dqv:A4_no_misreported_content_types.
-        dqv:A5_dereferenced_forward-links .
-# note the above lines create new instances dqv:A2 etc for the metrics
-
 dqv:Completeness a dqv:Dimension ;
     rdfs:label "Completeness" ;
     dqv:inDimension dqv:CM1_schema_completeness,
