@@ -9,7 +9,7 @@
 @prefix bibo:    <http://purl.org/ontology/bibo/> .  # For citations
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 
-<https://tinyurl.com/4wu4h3da>
+<https://raw.githubusercontent.com/OrYnXEd/FYP/d0438de8d41df704205071948060cc76da1fac48/data_quality_ontology_fixed.ttl>
     a owl:Ontology ;
     owl:versionIRI <https://tinyurl.com/4wu4h3da/1.0> ;
     owl:versionInfo "1.0" ;
@@ -20,10 +20,6 @@
     dcterms:created "2025-03-11"^^xsd:date ;
     dcterms:creator "Edward Mwanyali" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-
-# GitHub raw file for RDF retrieval
-   
-    # GitHub Pages or README for HTML documentation (update if needed)
     dcat:accessURL <https://OrYnXEd.github.io/FYP/> ;
     dcat:downloadURL <https://raw.githubusercontent.com/OrYnXEd/FYP/d0438de8d41df704205071948060cc76da1fac48/data_quality_ontology_fixed.ttl> ;
     foaf:contributor "Rob Brennan" ;
