@@ -25,7 +25,11 @@
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:accessRights "This ontology is freely accessible without restrictions." ;
     dct:rights "This ontology is licensed under CC BY 4.0 and can be freely used with attribution." ;
-    odrl:hasPolicy <https://example.org/data-quality-policy> ; # Optional
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    schema:license <https://creativecommons.org/licenses/by/4.0/> ;
+    doap:license <https://creativecommons.org/licenses/by/4.0/> ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+
 
     foaf:contributor "Rob Brennan" ;
     # Use dqv instead of custom terms
