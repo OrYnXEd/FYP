@@ -16,6 +16,8 @@
     dcterms:description "An ontology for describing data quality dimensions and metrics based on standardized vocabularies." ;
     dcterms:created "2025-03-11"^^xsd:date ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:accessURL <https://tinyurl.com/4wu4h3da> ;
+    dcat:downloadURL <https://tinyurl.com/4wu4h3da> ;
     owl:versionIRI <https://tinyurl.com/4wu4h3da> ;
     owl:versionInfo "1.0" ;
     foaf:contributor "Rob Brennan" ;
