@@ -20,8 +20,12 @@
     dcterms:created "2025-03-11"^^xsd:date ;
     dcterms:creator "Edward Mwanyali" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcat:accessURL <https://tinyurl.com/4wu4h3da> ;
-    dcat:downloadURL <https://tinyurl.com/4wu4h3da> ;
+
+# GitHub raw file for RDF retrieval
+   
+    # GitHub Pages or README for HTML documentation (update if needed)
+    dcat:accessURL <https://OrYnXEd.github.io/FYP/> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/OrYnXEd/FYP/d0438de8d41df704205071948060cc76da1fac48/data_quality_ontology_fixed.ttl> ;
     foaf:contributor "Rob Brennan" ;
     # Use dqv instead of custom terms
     owl:imports <http://www.w3.org/ns/dqv#> .
