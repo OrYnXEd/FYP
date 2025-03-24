@@ -13,7 +13,7 @@
     a owl:Ontology ;
     owl:versionIRI <https://tinyurl.com/4wu4h3da/1.0> ;
     owl:versionInfo "1.0" ;
-    owl:ontologyIRI <https://tinyurl.com/4wu4h3da> 
+    owl:ontologyIRI <https://tinyurl.com/4wu4h3da> ;
     rdfs:label "Data Quality Ontology" ;
     dcterms:title "Data Quality Ontology" ;
     dcterms:description "An ontology for describing data quality dimensions and metrics based on standardized vocabularies." ;
