@@ -29,11 +29,7 @@
     schema:license <https://creativecommons.org/licenses/by/4.0/> ;
     doap:license <https://creativecommons.org/licenses/by/4.0/> ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-
-
     foaf:contributor "Rob Brennan" ;
-    # Use dqv instead of custom terms
-    owl:imports <http://www.w3.org/ns/dqv#> .
 
 # Dimensions (aligned with dqv)
 dqv:Dimension
@@ -47,7 +43,6 @@ dqv:Metric
     rdfs:label "Metric" ;
     skos:definition "A measurable aspect of data quality within a dimension." .
 
-# Example Dimension with corrected properties
 dqv:Availability
     a dqv:Dimension ;
     rdfs:label "Availability" ;
