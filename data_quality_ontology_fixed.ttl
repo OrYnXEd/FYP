@@ -15,11 +15,11 @@
 @prefix cc:      <http://creativecommons.org/ns#> .
 
 
-<https://raw.githubusercontent.com/OrYnXEd/FYP/d0438de8d41df704205071948060cc76da1fac48/data_quality_ontology_fixed.ttl>
+<https://github.com/OrYnXEd/FYP/data_quality_ontology_fixed.ttl>
     a owl:Ontology ;
-    owl:versionIRI <https://tinyurl.com/4wu4h3da/1.0> ;
+    owl:versionIRI <https://github.com/OrYnXEd/FYP/data_quality_ontology_fixed.ttl/1.0> ;
     owl:versionInfo "1.0" ;
-    owl:ontologyIRI <https://tinyurl.com/4wu4h3da> ;
+    owl:ontologyIRI <https://github.com/OrYnXEd/FYP/data_quality_ontology_fixed.ttl> ;
     rdfs:label "Data Quality Ontology" ;
     dcterms:title "Data Quality Ontology" ;
     dcterms:description "An ontology for describing data quality dimensions and metrics based on standardized vocabularies." ;
@@ -27,7 +27,7 @@
     dcterms:creator "Edward Mwanyali" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcat:accessURL <https://OrYnXEd.github.io/FYP/> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/OrYnXEd/FYP/d0438de8d41df704205071948060cc76da1fac48/data_quality_ontology_fixed.ttl> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/OrYnXEd/FYP/data_quality_ontology_fixed.ttl> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:accessRights "This ontology is freely accessible without restrictions." ;
     dct:rights "This ontology is licensed under CC BY 4.0 and can be freely used with attribution." ;
