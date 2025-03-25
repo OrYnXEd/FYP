@@ -8,6 +8,8 @@
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix bibo:    <http://purl.org/ontology/bibo/> .  # For citations
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+
 
 <https://raw.githubusercontent.com/OrYnXEd/FYP/d0438de8d41df704205071948060cc76da1fac48/data_quality_ontology_fixed.ttl>
     a owl:Ontology ;
