@@ -470,11 +470,6 @@ dqv:V2_provision_ofthe_data_in_variouslanguages a dqv:Metric ;
     rdfs:label "V2_provision_ofthe_data_in_variouslanguages" ;
     dcterms:description "checking whetherdataisavailableindifferentlan-guages [18]" .
 
-dqv: a dqv:Metric ;
-    rdfs:label "" ;
-    dcterms:description "",
-        "(iii)indicating the level oftrustforthe publisher on ascale of 1−9 [21,24]" .
-
 dqv:Dimension a dqv:Dimension,
         owl:Class ;
     rdfs:label "Dimension" ;
