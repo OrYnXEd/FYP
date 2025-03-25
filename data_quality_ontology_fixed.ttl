@@ -35,7 +35,7 @@
     schema:license <https://creativecommons.org/licenses/by/4.0/> ;
     doap:license <https://creativecommons.org/licenses/by/4.0/> ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    foaf:contributor "Rob Brennan" ;
+    foaf:contributor "Rob Brennan" .
 
 # Dimensions (aligned with dqv)
 dqv:Dimension
@@ -174,8 +174,8 @@ dqv:Versatility a dqv:Dimension ;
     rdfs:label "Versatility" ;
     dqv:inDimension dqv:,
         dqv:V1_provision_of_the_data_in_differentserialization_formats,
-        dqv:V2_provision_ofthe_data_in_variouslanguages,
-        dqv:cid52 .
+        dqv:V2_provision_ofthe_data_in_variouslanguages.
+        
 
 dcterms:description a owl:DatatypeProperty ;
     rdfs:label "description" ;
@@ -189,16 +189,6 @@ dqv:inDimension a owl:ObjectProperty ;
     rdfs:domain dqv:Dimension ;
     rdfs:range dqv:Metric .
 
-<https://w3id.org/my-data-quality-ontology> a owl:Ontology ;
-    rdfs:label "Data Quality Ontology" ;
-    dcterms:bibliographicCitation "Reference to related work or documentation." ;
-    dcterms:creator "Edward Mwanyali" ;
-    dcterms:date "2025-03-11"^^xsd:date ;
-    dcterms:description "An ontology that defines dimensions and metrics for assessing data quality." ;
-    dcterms:title "Data Quality Ontology" ;
-    rdfs:comment "Ontology for representing data quality metrics and dimensions." ;
-    owl:versionIRI <https://w3id.org/my-data-quality-ontology/20250311123343> ;
-    owl:versionInfo "1.0" .
 
 dqv:A1_accessibility_of_the_SPARQL_end-point_and_the_server a dqv:Metric ;
     rdfs:label "A1_accessibility_of_the_SPARQL_end-point_and_the_server" ;
@@ -479,20 +469,6 @@ dqv:V1_provision_of_the_data_in_differentserialization_formats a dqv:Metric ;
 dqv:V2_provision_ofthe_data_in_variouslanguages a dqv:Metric ;
     rdfs:label "V2_provision_ofthe_data_in_variouslanguages" ;
     dcterms:description "checking whetherdataisavailableindifferentlan-guages [18]" .
-
-dqv:cid52_cid52 a dqv:Metric ;
-    rdfs:label "cid52_cid52" ;
-    dcterms:description "" .
-
-dqv:cid52 a dqv:Dimension,
-        dqv:Metric ;
-    rdfs:label "(cid:52)",
-        "cid52" ;
-    dcterms:description "",
-        "(cid:52)" ;
-    dqv:inDimension dqv:,
-        dqv:cid52,
-        dqv:cid52_cid52 .
 
 dqv: a dqv:Metric ;
     rdfs:label "" ;
