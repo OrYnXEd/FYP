@@ -1,4 +1,4 @@
-@prefix dqv:     <https://tinyurl.com/4wu4h3da> .  # Reuse W3C's Data Quality Vocabulary
+@prefix dq:     <https://tinyurl.com/4wu4h3da> .  # Reuse W3C's Data Quality Vocabulary
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
@@ -37,144 +37,144 @@
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     foaf:contributor "Rob Brennan" .
 
-# Dimensions (aligned with dqv)
+# Dimensions (aligned with dq)
 dqv:Dimension
     a owl:Class ;
     rdfs:label "Dimension" ;
     skos:definition "A high-level categorization of data quality aspects." .
 
-# Metrics (aligned with dqv)
+# Metrics (aligned with dq)
 dqv:Metric
     a owl:Class ;
     rdfs:label "Metric" ;
     skos:definition "A measurable aspect of data quality within a dimension." .
 
-dqv:Availability
+dq:Availability
     a dqv:Dimension ;
     rdfs:label "Availability" ;
-    dqv:hasMetric dqv:A1_accessibility_of_SPARQL_endpoint .  # Use dqv:hasMetric from dqv
+    dq:hasMetric dq:A1_accessibility_of_SPARQL_endpoint .  # Use dq:hasMetric from dq
 
 # Example Metric
-dqv:A1_accessibility_of_SPARQL_endpoint
+dq:A1_accessibility_of_SPARQL_endpoint
     a dqv:Metric ;
     rdfs:label "Accessibility of SPARQL endpoint" ;
     dcterms:description "Checks whether the server responds to SPARQL queries." .
 
-dqv:Completeness a dqv:Dimension ;
+dq:Completeness a dqv:Dimension ;
     rdfs:label "Completeness" ;
-    dqv:inDimension dqv:CM1_schema_completeness,
-        dqv:CM2_property_completeness,
-        dqv:CM3_population_completeness .
+    dq:inDimension dq:CM1_schema_completeness,
+        dq:CM2_property_completeness,
+        dq:CM3_population_completeness .
 
-dqv:Conciseness a dqv:Dimension ;
+dq:Conciseness a dqv:Dimension ;
     rdfs:label "Conciseness" ;
-    dqv:inDimension dqv:CN1_high_intensional_conciseness,
-        dqv:CN2_high_extensional_conciseness,
-        dqv:CN3_usage_of_unambiguous_annotationslabels .
+    dq:inDimension dq:CN1_high_intensional_conciseness,
+        dq:CN2_high_extensional_conciseness,
+        dq:CN3_usage_of_unambiguous_annotationslabels .
 
-dqv:Consistency a dqv:Dimension ;
+dq:Consistency a dqv:Dimension ;
     rdfs:label "Consistency" ;
-    dqv:inDimension dqv:CS10_no_inconsistent_values,
-        dqv:CS1_no_use_of_entities_as_members_of_disjointclasses,
-        dqv:CS2_no_misplaced_classes_or_properties,
-        dqv:CS3_nomisuseofowlDatatypePropertyorowlObjectProperty,
-        dqv:CS4_members_of_owlDeprecatedClassowlDeprecatedPropertyornotused,
-        dqv:CS5_valid_usage_ofinverse-functional_proper-ties,
-        dqv:CS6_absence_of_ontology_hijacking,
-        dqv:CS7_nonegativedependenciescorrelationamong_properties,
-        dqv:CS8_no_inconsistencies_in_spatial_data,
-        dqv:CS9_correct_domain_and_range_deﬁnition .
+    dq:inDimension dq:CS10_no_inconsistent_values,
+        dq:CS1_no_use_of_entities_as_members_of_disjointclasses,
+        dq:CS2_no_misplaced_classes_or_properties,
+        dq:CS3_nomisuseofowlDatatypePropertyorowlObjectProperty,
+        dq:CS4_members_of_owlDeprecatedClassowlDeprecatedPropertyornotused,
+        dq:CS5_valid_usage_ofinverse-functional_proper-ties,
+        dq:CS6_absence_of_ontology_hijacking,
+        dq:CS7_nonegativedependenciescorrelationamong_properties,
+        dq:CS8_no_inconsistencies_in_spatial_data,
+        dq:CS9_correct_domain_and_range_deﬁnition .
 
-dqv:Interlinking a dqv:Dimension ;
+dq:Interlinking a dqv:Dimension ;
     rdfs:label "Interlinking" ;
-    dqv:inDimension dqv:I1_detection_of_good_quality_inter-links,
-        dqv:I2_existence_of_links_to_external_dataproviders,
-        dqv:I3_dereferenced_back-links .
+    dq:inDimension dq:I1_detection_of_good_quality_inter-links,
+        dq:I2_existence_of_links_to_external_dataproviders,
+        dq:I3_dereferenced_back-links .
 
-dqv:Interoperability a dqv:Dimension ;
+dq:Interoperability a dqv:Dimension ;
     rdfs:label "Interoperability" ;
-    dqv:inDimension dqv:IO1_re-use_of_existing_terms,
-        dqv:IO2_re-use_of_existing_vocabularies .
+    dq:inDimension dq:IO1_re-use_of_existing_terms,
+        dq:IO2_re-use_of_existing_vocabularies .
 
-dqv:Interpretability a dqv:Dimension ;
+dq:Interpretability a dqv:Dimension ;
     rdfs:label "Interpretability" ;
-    dqv:inDimension dqv:IN1_use_of_self-descriptive_formats,
-        dqv:IN2_detectingtheinterpretabilityofdata,
-        dqv:IN3_invalid_usage_of_undeﬁned_classesand_properties,
-        dqv:IN4_no_misinterpretationof_missingvalues .
+    dq:inDimension dq:IN1_use_of_self-descriptive_formats,
+        dq:IN2_detectingtheinterpretabilityofdata,
+        dq:IN3_invalid_usage_of_undeﬁned_classesand_properties,
+        dq:IN4_no_misinterpretationof_missingvalues .
 
-dqv:Licensing a dqv:Dimension ;
+dq:Licensing a dqv:Dimension ;
     rdfs:label "Licensing" ;
-    dqv:inDimension dqv:L1_machine-readable_indication_of_alicense,
-        dqv:L2_human-readableindicationofalicense,
-        dqv:L3_specifying_the_correct_license .
+    dq:inDimension dq:L1_machine-readable_indication_of_alicense,
+        dq:L2_human-readableindicationofalicense,
+        dq:L3_specifying_the_correct_license .
 
-dqv:Performance a dqv:Dimension ;
+dq:Performance a dqv:Dimension ;
     rdfs:label "Performance" ;
-    dqv:inDimension dqv:P1_usage_of_slash-URIs,
-        dqv:P2_low_latency,
-        dqv:P3_high_throughput,
-        dqv:P4_scalability_of_a_data_source .
+    dq:inDimension dq:P1_usage_of_slash-URIs,
+        dq:P2_low_latency,
+        dq:P3_high_throughput,
+        dq:P4_scalability_of_a_data_source .
 
-dqv:Relevancy a dqv:Dimension ;
+dq:Relevancy a dqv:Dimension ;
     rdfs:label "Relevancy" ;
-    dqv:inDimension dqv:R1_relevanttermswithinmeta-information_attributes,
-        dqv:R2_coverage .
+    dq:inDimension dq:R1_relevanttermswithinmeta-information_attributes,
+        dq:R2_coverage .
 
-dqv:Representational-conciseness a dqv:Dimension ;
+dq:Representational-conciseness a dqv:Dimension ;
     rdfs:label "Representational-conciseness" ;
-    dqv:inDimension dqv:RC1_keeping_URIs_short,
-        dqv:RC2_no_use_of_prolix_RDF_features .
+    dq:inDimension dq:RC1_keeping_URIs_short,
+        dq:RC2_no_use_of_prolix_RDF_features .
 
-dqv:Security a dqv:Dimension ;
+dq:Security a dqv:Dimension ;
     rdfs:label "Security" ;
-    dqv:inDimension dqv:S1_usage_of_digital_signatures,
-        dqv:S2_authenticity_of_the_dataset .
+    dq:inDimension dq:S1_usage_of_digital_signatures,
+        dq:S2_authenticity_of_the_dataset .
 
-dqv:Semanticaccuracy a dqv:Dimension ;
+dq:Semanticaccuracy a dqv:Dimension ;
     rdfs:label "Semanticaccuracy" ;
-    dqv:inDimension dqv:SA1_no_outliers,
-        dqv:SA2_no_inaccurate_values,
-        dqv:SA3_no_inaccurateannotationslabellings_orclassiﬁcations,
-        dqv:SA4_no_misuse_of_properties,
-        dqv:SA5_detection_of_valid_rules .
+    dq:inDimension dq:SA1_no_outliers,
+        dq:SA2_no_inaccurate_values,
+        dq:SA3_no_inaccurateannotationslabellings_orclassiﬁcations,
+        dq:SA4_no_misuse_of_properties,
+        dq:SA5_detection_of_valid_rules .
 
-dqv:Syntacticvalidity a dqv:Dimension ;
+dq:Syntacticvalidity a dqv:Dimension ;
     rdfs:label "Syntacticvalidity" ;
-    dqv:inDimension dqv:SV1_no_syntax_errors_of_the_documents,
-        dqv:SV2_syntactically_accurate_values,
-        dqv:SV3_no_malformed_datatype_literals .
+    dq:inDimension dq:SV1_no_syntax_errors_of_the_documents,
+        dq:SV2_syntactically_accurate_values,
+        dq:SV3_no_malformed_datatype_literals .
 
-dqv:Timeliness a dqv:Dimension ;
+dq:Timeliness a dqv:Dimension ;
     rdfs:label "Timeliness" ;
-    dqv:inDimension dqv:TI1_freshness_of_datasets_based_on_cur-rency_and_volatility,
-        dqv:TI2_freshness_of_datasets_based_on_theirdata_source .
+    dq:inDimension dq:TI1_freshness_of_datasets_based_on_cur-rency_and_volatility,
+        dq:TI2_freshness_of_datasets_based_on_theirdata_source .
 
-dqv:Trustworthiness a dqv:Dimension ;
+dq:Trustworthiness a dqv:Dimension ;
     rdfs:label "Trustworthiness" ;
-    dqv:inDimension dqv:,
-        dqv:T1_trustworthiness_of_statements,
-        dqv:T2_trustworthiness_through_reasoning,
-        dqv:T3_trustworthinessofstatementsdatasets_and_rules,
-        dqv:T4_trustworthiness_of_a_resource,
-        dqv:T5_trustworthinessoftheinformationprovider,
-        dqv:T6_trustworthinessofinformationpro-vided_content_trust,
-        dqv:T7_reputation_of_the_dataset .
+    dq:inDimension dq:,
+        dq:T1_trustworthiness_of_statements,
+        dq:T2_trustworthiness_through_reasoning,
+        dq:T3_trustworthinessofstatementsdatasets_and_rules,
+        dq:T4_trustworthiness_of_a_resource,
+        dq:T5_trustworthinessoftheinformationprovider,
+        dq:T6_trustworthinessofinformationpro-vided_content_trust,
+        dq:T7_reputation_of_the_dataset .
 
-dqv:Understandability a dqv:Dimension ;
+dq:Understandability a dqv:Dimension ;
     rdfs:label "Understandability" ;
-    dqv:inDimension dqv:U1_human-readable_labelling_of_classesproperties_and_entities_as_well_as_pres-ence_of_metadata,
-        dqv:U2_indication_of_one_or_more_exemplaryURIs,
-        dqv:U3_indication_of_a_regular_expression_thatmatches_the_URIs_of_a_dataset,
-        dqv:U4_indication_of_an_exemplary_SPARQLquery,
-        dqv:U5_indication_of_the_vocabularies_used_inthe_dataset,
-        dqv:U6_provisionof_messageboardsandmailing_lists .
+    dq:inDimension dq:U1_human-readable_labelling_of_classesproperties_and_entities_as_well_as_pres-ence_of_metadata,
+        dq:U2_indication_of_one_or_more_exemplaryURIs,
+        dq:U3_indication_of_a_regular_expression_thatmatches_the_URIs_of_a_dataset,
+        dq:U4_indication_of_an_exemplary_SPARQLquery,
+        dq:U5_indication_of_the_vocabularies_used_inthe_dataset,
+        dq:U6_provisionof_messageboardsandmailing_lists .
 
-dqv:Versatility a dqv:Dimension ;
+dq:Versatility a dqv:Dimension ;
     rdfs:label "Versatility" ;
-    dqv:inDimension dqv:,
-        dqv:V1_provision_of_the_data_in_differentserialization_formats,
-        dqv:V2_provision_ofthe_data_in_variouslanguages.
+    dq:inDimension dq:,
+        dq:V1_provision_of_the_data_in_differentserialization_formats,
+        dq:V2_provision_ofthe_data_in_variouslanguages.
         
 
 dcterms:description a owl:DatatypeProperty ;
@@ -183,297 +183,297 @@ dcterms:description a owl:DatatypeProperty ;
     rdfs:domain dqv:Metric ;
     rdfs:range rdfs:Literal .
 
-dqv:inDimension a owl:ObjectProperty ;
+dq:inDimension a owl:ObjectProperty ;
     rdfs:label "hasMetric" ;
     rdfs:comment "Links a dimension to its associated metrics." ;
     rdfs:domain dqv:Dimension ;
     rdfs:range dqv:Metric .
 
 
-dqv:A1_accessibility_of_the_SPARQL_end-point_and_the_server a dqv:Metric ;
+dq:A1_accessibility_of_the_SPARQL_end-point_and_the_server a dqv:Metric ;
     rdfs:label "A1_accessibility_of_the_SPARQL_end-point_and_the_server" ;
     dcterms:description "checking whether the server responds to a SPARQL query [18]" .
 
-dqv:A2_accessibility_of_the_RDF_dumps a dqv:Metric ;
+dq:A2_accessibility_of_the_RDF_dumps a dqv:Metric ;
     rdfs:label "A2_accessibility_of_the_RDF_dumps" ;
     dcterms:description "checking whether an RDF dump is provided and can be down-loaded [18]" .
 
-dqv:A3_dereferenceability_of_the_URI a dqv:Metric ;
+dq:A3_dereferenceability_of_the_URI a dqv:Metric ;
     rdfs:label "A3_dereferenceability_of_the_URI" ;
     dcterms:description "checking (i) for dead or broken links i.e. when an HTTP-GETrequest is sent, the status code 404 Not Found is not be re-turned (ii) that useful data (particularly RDF) is returned uponlookup of a URI,(iii)for changes in the URIi.e the compli-ance with the recommended way of implementing redirectionsusing the status code 303 See Other [18,30]" .
 
-dqv:A4_no_misreported_content_types a dqv:Metric ;
+dq:A4_no_misreported_content_types a dqv:Metric ;
     rdfs:label "A4_no_misreported_content_types" ;
     dcterms:description "detect whetherthe HTTP response containsthe header ﬁeldstating the appropriate contenttype ofthe returned ﬁle e.g.application/rdf+xml [30]" .
 
-dqv:A5_dereferenced_forward-links a dqv:Metric ;
+dq:A5_dereferenced_forward-links a dqv:Metric ;
     rdfs:label "A5_dereferenced_forward-links" ;
     dcterms:description "dereferenceabilityofallforwardlinks:allavailabletripleswhere the local URIis mentioned in the subject(i.e.the de-scription of the resource) [31]" .
 
-dqv:Abr_Metric a dqv:Metric ;
+dq:Abr_Metric a dqv:Metric ;
     rdfs:label "Abr_Metric" ;
     dcterms:description "Description" .
 
-dqv:CM1_schema_completeness a dqv:Metric ;
+dq:CM1_schema_completeness a dqv:Metric ;
     rdfs:label "CM1_schema_completeness" ;
     dcterms:description "no. of classes and properties represented[19,45]total no. of classes and properties" .
 
-dqv:CM2_property_completeness a dqv:Metric ;
+dq:CM2_property_completeness a dqv:Metric ;
     rdfs:label "CM2_property_completeness" ;
     dcterms:description "no. of values represented for a speciﬁc property(i)[17,19], (ii) exploit-total no. of values for a speciﬁc propertying statistical distributions of properties and types to char-acterize the property and then detect completeness [50]" .
 
-dqv:CM3_population_completeness a dqv:Metric ;
+dq:CM3_population_completeness a dqv:Metric ;
     rdfs:label "CM3_population_completeness" ;
     dcterms:description "no. of real-world objects are represented[17,19,45]" .
 
-dqv:CN1_high_intensional_conciseness a dqv:Metric ;
+dq:CN1_high_intensional_conciseness a dqv:Metric ;
     rdfs:label "CN1_high_intensional_conciseness" ;
     dcterms:description "no. of unique properties/classes of a dataset[45]total no. of properties/classes in a target schema" .
 
-dqv:CN2_high_extensional_conciseness a dqv:Metric ;
+dq:CN2_high_extensional_conciseness a dqv:Metric ;
     rdfs:label "CN2_high_extensional_conciseness" ;
     dcterms:description "no. of unique objects of a dataset(i)[45],(ii)1 −total number of objects representations in the datasettotal no. of instances that violate the uniqueness rule[19,36,40]total no. of relevant instances" .
 
-dqv:CN3_usage_of_unambiguous_annotationslabels a dqv:Metric ;
+dq:CN3_usage_of_unambiguous_annotationslabels a dqv:Metric ;
     rdfs:label "CN3_usage_of_unambiguous_annotationslabels" ;
     dcterms:description "no. of ambiguous instances1 −[40,53]no. of instances contained in the semantic metadata set" .
 
-dqv:CS10_no_inconsistent_values a dqv:Metric ;
+dq:CS10_no_inconsistent_values a dqv:Metric ;
     rdfs:label "CS10_no_inconsistent_values" ;
     dcterms:description "detection by the generation of a particular set of schemaaxioms for all properties in a dataset and the manual veri-ﬁcation of these axioms [65]" .
 
-dqv:CS1_no_use_of_entities_as_members_of_disjointclasses a dqv:Metric ;
+dq:CS1_no_use_of_entities_as_members_of_disjointclasses a dqv:Metric ;
     rdfs:label "CS1_no_use_of_entities_as_members_of_disjointclasses" ;
     dcterms:description "no. of entities described as members of disjoint classes[18,30,36]total no. of entities described in the dataset" .
 
-dqv:CS2_no_misplaced_classes_or_properties a dqv:Metric ;
+dq:CS2_no_misplaced_classes_or_properties a dqv:Metric ;
     rdfs:label "CS2_no_misplaced_classes_or_properties" ;
     dcterms:description "using entailment rules thatindicate the position of a termin a triple [17,30]" .
 
-dqv:CS3_nomisuseofowlDatatypePropertyorowlObjectProperty a dqv:Metric ;
+dq:CS3_nomisuseofowlDatatypePropertyorowlObjectProperty a dqv:Metric ;
     rdfs:label "CS3_nomisuseofowlDatatypePropertyorowlObjectProperty" ;
     dcterms:description "detection of misuse of owl:DatatypeProperty orowl:ObjectProperty throughtheontology main-tainer [30]" .
 
-dqv:CS4_members_of_owlDeprecatedClassowlDeprecatedPropertyornotused a dqv:Metric ;
+dq:CS4_members_of_owlDeprecatedClassowlDeprecatedPropertyornotused a dqv:Metric ;
     rdfs:label "CS4_members_of_owlDeprecatedClassowlDeprecatedPropertyornotused" ;
     dcterms:description "detectionofuseofmembersowl:DeprecatedClassoforowl:DeprecatedPropertythroughtheontologymaintainerorbyspecifying manual mappingsfromdeprecated terms to compatible terms [17,30]" .
 
-dqv:CS5_valid_usage_ofinverse-functional_proper-ties a dqv:Metric ;
+dq:CS5_valid_usage_ofinverse-functional_proper-ties a dqv:Metric ;
     rdfs:label "CS5_valid_usage_ofinverse-functional_proper-ties" ;
     dcterms:description "(i) by checking the uniqueness and validity of the inverse-functional values [30], (ii) by deﬁning a SPARQL query asa constraint [36]" .
 
-dqv:CS6_absence_of_ontology_hijacking a dqv:Metric ;
+dq:CS6_absence_of_ontology_hijacking a dqv:Metric ;
     rdfs:label "CS6_absence_of_ontology_hijacking" ;
     dcterms:description "detection ofthe re-deﬁnition by third parties of externalclasses/properties such that reasoning over data using thoseexternal terms is not affected [30]" .
 
-dqv:CS7_nonegativedependenciescorrelationamong_properties a dqv:Metric ;
+dq:CS7_nonegativedependenciescorrelationamong_properties a dqv:Metric ;
     rdfs:label "CS7_nonegativedependenciescorrelationamong_properties" ;
     dcterms:description "using association rules [10]" .
 
-dqv:CS8_no_inconsistencies_in_spatial_data a dqv:Metric ;
+dq:CS8_no_inconsistencies_in_spatial_data a dqv:Metric ;
     rdfs:label "CS8_no_inconsistencies_in_spatial_data" ;
     dcterms:description "through semantic and geometric constraints [48]" .
 
-dqv:CS9_correct_domain_and_range_deﬁnition a dqv:Metric ;
+dq:CS9_correct_domain_and_range_deﬁnition a dqv:Metric ;
     rdfs:label "CS9_correct_domain_and_range_deﬁnition" ;
     dcterms:description "theattribution ofaresource’s property (with acertainvalue) is only valid if the resource (domain), value (range)or literal value (rdfs ranged) is of a certain type - detectedby use of SPARQL queries as a constraint [36]" .
 
-dqv:Flemming201018_Böhmetal201010 a dqv:Metric ;
+dq:Flemming201018_Böhmetal201010 a dqv:Metric ;
     rdfs:label "Flemming201018_Böhmetal201010" ;
     dcterms:description "Chenetal.,2010[14]" .
 
-dqv:I1_detection_of_good_quality_inter-links a dqv:Metric ;
+dq:I1_detection_of_good_quality_inter-links a dqv:Metric ;
     rdfs:label "I1_detection_of_good_quality_inter-links" ;
     dcterms:description "(i) detection of(a)interlinking degree,(b) clustering coefﬁ-cient, (c) centrality, (d) open sameAs chains and (e) descriptionrichness through sameAs by using network measures [25], (ii)via crowdsourcing [1,65]" .
 
-dqv:I2_existence_of_links_to_external_dataproviders a dqv:Metric ;
+dq:I2_existence_of_links_to_external_dataproviders a dqv:Metric ;
     rdfs:label "I2_existence_of_links_to_external_dataproviders" ;
     dcterms:description "detection of the existence and usage of external URIs (e.g. us-ing owl:sameAs links) [31]" .
 
-dqv:I3_dereferenced_back-links a dqv:Metric ;
+dq:I3_dereferenced_back-links a dqv:Metric ;
     rdfs:label "I3_dereferenced_back-links" ;
     dcterms:description "detection of alllocalin-links or back-links: alltriples from adataset that have the resource’s URI as the object [31]" .
 
-dqv:IN1_use_of_self-descriptive_formats a dqv:Metric ;
+dq:IN1_use_of_self-descriptive_formats a dqv:Metric ;
     rdfs:label "IN1_use_of_self-descriptive_formats" ;
     dcterms:description "identifying objects and terms used to deﬁne these objectswith globally unique identiﬁers [17]" .
 
-dqv:IN2_detectingtheinterpretabilityofdata a dqv:Metric ;
+dq:IN2_detectingtheinterpretabilityofdata a dqv:Metric ;
     rdfs:label "IN2_detectingtheinterpretabilityofdata" ;
     dcterms:description "detecting the use of appropriate language, symbols, units,datatypes and clear deﬁnitions [18,51]" .
 
-dqv:IN3_invalid_usage_of_undeﬁned_classesand_properties a dqv:Metric ;
+dq:IN3_invalid_usage_of_undeﬁned_classesand_properties a dqv:Metric ;
     rdfs:label "IN3_invalid_usage_of_undeﬁned_classesand_properties" ;
     dcterms:description "detection of invalid usage of undeﬁned classes and proper-ties (i.e. those without any formal deﬁnition) [30]" .
 
-dqv:IN4_no_misinterpretationof_missingvalues a dqv:Metric ;
+dq:IN4_no_misinterpretationof_missingvalues a dqv:Metric ;
     rdfs:label "IN4_no_misinterpretationof_missingvalues" ;
     dcterms:description "detecting the use of blank nodes [31]" .
 
-dqv:IO1_re-use_of_existing_terms a dqv:Metric ;
+dq:IO1_re-use_of_existing_terms a dqv:Metric ;
     rdfs:label "IO1_re-use_of_existing_terms" ;
     dcterms:description "detection of whether existing terms from allrelevant vo-cabularies for that particular domain have been reused [31]" .
 
-dqv:IO2_re-use_of_existing_vocabularies a dqv:Metric ;
+dq:IO2_re-use_of_existing_vocabularies a dqv:Metric ;
     rdfs:label "IO2_re-use_of_existing_vocabularies" ;
     dcterms:description "usageofrelevantvocabulariesforthatparticulardo-main [18]" .
 
-dqv:L1_machine-readable_indication_of_alicense a dqv:Metric ;
+dq:L1_machine-readable_indication_of_alicense a dqv:Metric ;
     rdfs:label "L1_machine-readable_indication_of_alicense" ;
     dcterms:description "detection of the indication of a license in the VoID descriptionor in the dataset itself [18,31]" .
 
-dqv:L2_human-readableindicationofalicense a dqv:Metric ;
+dq:L2_human-readableindicationofalicense a dqv:Metric ;
     rdfs:label "L2_human-readableindicationofalicense" ;
     dcterms:description "detection of a license in the documentation of the dataset [18,31]" .
 
-dqv:L3_specifying_the_correct_license a dqv:Metric ;
+dq:L3_specifying_the_correct_license a dqv:Metric ;
     rdfs:label "L3_specifying_the_correct_license" ;
     dcterms:description "detection of whetherthe datasetis attributed underthe samelicense as the original [18]" .
 
-dqv:P1_usage_of_slash-URIs a dqv:Metric ;
+dq:P1_usage_of_slash-URIs a dqv:Metric ;
     rdfs:label "P1_usage_of_slash-URIs" ;
     dcterms:description "checking for usage of slash-URIs where large amounts of datais provided [18]" .
 
-dqv:P2_low_latency a dqv:Metric ;
+dq:P2_low_latency a dqv:Metric ;
     rdfs:label "P2_low_latency" ;
     dcterms:description "(minimum) delay between submission of a request by the userand reception of the response from the system [18]" .
 
-dqv:P3_high_throughput a dqv:Metric ;
+dq:P3_high_throughput a dqv:Metric ;
     rdfs:label "P3_high_throughput" ;
     dcterms:description "(maximum) no. of answered HTTP-requests per second [18]" .
 
-dqv:P4_scalability_of_a_data_source a dqv:Metric ;
+dq:P4_scalability_of_a_data_source a dqv:Metric ;
     rdfs:label "P4_scalability_of_a_data_source" ;
     dcterms:description "detection of whether the time to answer an amount of ten re-quests divided by ten is not longer than the time it takes to an-swer one request [18]" .
 
-dqv:R1_relevanttermswithinmeta-information_attributes a dqv:Metric ;
+dq:R1_relevanttermswithinmeta-information_attributes a dqv:Metric ;
     rdfs:label "R1_relevanttermswithinmeta-information_attributes" ;
     dcterms:description "obtaining relevant data by (i) ranking (a numerical valuesimilarto PageRank), which determines the centralityof RDF documents and statements [11], (ii) via crowd-sourcing [1,65]" .
 
-dqv:R2_coverage a dqv:Metric ;
+dq:R2_coverage a dqv:Metric ;
     rdfs:label "R2_coverage" ;
     dcterms:description "measuringthecoverage(i.e.numberofentitiesde-scribed in a dataset) and level of detail (i.e. number ofproperties) in a datasetto ensure thatthe data retrievedis appropriate for the task at hand [18]" .
 
-dqv:RC1_keeping_URIs_short a dqv:Metric ;
+dq:RC1_keeping_URIs_short a dqv:Metric ;
     rdfs:label "RC1_keeping_URIs_short" ;
     dcterms:description "detection of long URIs or those that contain query param-eters [17,31]" .
 
-dqv:RC2_no_use_of_prolix_RDF_features a dqv:Metric ;
+dq:RC2_no_use_of_prolix_RDF_features a dqv:Metric ;
     rdfs:label "RC2_no_use_of_prolix_RDF_features" ;
     dcterms:description "detection of RDF primitives i.e. RDF reiﬁcation, RDF con-tainers and RDF collections [17,31]" .
 
-dqv:S1_usage_of_digital_signatures a dqv:Metric ;
+dq:S1_usage_of_digital_signatures a dqv:Metric ;
     rdfs:label "S1_usage_of_digital_signatures" ;
     dcterms:description "by signing a documentcontaining an RDF serialization,aSPARQL result set or signing an RDF graph [13,18]" .
 
-dqv:S2_authenticity_of_the_dataset a dqv:Metric ;
+dq:S2_authenticity_of_the_dataset a dqv:Metric ;
     rdfs:label "S2_authenticity_of_the_dataset" ;
     dcterms:description "verifying authenticity of the dataset based on a provenance vo-cabulary such as author and his contributors,the publisher ofthe data and its sources (if present in the dataset) [18]" .
 
-dqv:SA1_no_outliers a dqv:Metric ;
+dq:SA1_no_outliers a dqv:Metric ;
     rdfs:label "SA1_no_outliers" ;
     dcterms:description "by(i)usingdistance-based,deviation-basedanddistribution-based methods [8,17], (ii) using the statisticaldistributions ofacertain typeto assessthestatement’scorrectness [50]" .
 
-dqv:SA2_no_inaccurate_values a dqv:Metric ;
+dq:SA2_no_inaccurate_values a dqv:Metric ;
     rdfs:label "SA2_no_inaccurate_values" ;
     dcterms:description "by (i) using functional dependencies between the values oftwo or more different properties [19], (ii) comparison be-tween two literal values of a resource [36], (iii) via crowd-sourcing [1,65]" .
 
-dqv:SA3_no_inaccurateannotationslabellings_orclassiﬁcations a dqv:Metric ;
+dq:SA3_no_inaccurateannotationslabellings_orclassiﬁcations a dqv:Metric ;
     rdfs:label "SA3_no_inaccurateannotationslabellings_orclassiﬁcations" ;
     dcterms:description "1 − inaccurate instances[40]total no. of instances * balanced distance metric" .
 
-dqv:SA4_no_misuse_of_properties a dqv:Metric ;
+dq:SA4_no_misuse_of_properties a dqv:Metric ;
     rdfs:label "SA4_no_misuse_of_properties" ;
     dcterms:description "by using proﬁling statistics, which supportthe detectionof discordant values or misused properties and facilitate toﬁnd valid formats for speciﬁc properties [10]" .
 
-dqv:SA5_detection_of_valid_rules a dqv:Metric ;
+dq:SA5_detection_of_valid_rules a dqv:Metric ;
     rdfs:label "SA5_detection_of_valid_rules" ;
     dcterms:description "ratio of the number of semantically valid rules to the num-ber of nontrivial rules [14]" .
 
-dqv:SV1_no_syntax_errors_of_the_documents a dqv:Metric ;
+dq:SV1_no_syntax_errors_of_the_documents a dqv:Metric ;
     rdfs:label "SV1_no_syntax_errors_of_the_documents" ;
     dcterms:description "detecting syntax errors using (i) validators [18,30], (ii) viacrowdsourcing [1,65]" .
 
-dqv:SV2_syntactically_accurate_values a dqv:Metric ;
+dq:SV2_syntactically_accurate_values a dqv:Metric ;
     rdfs:label "SV2_syntactically_accurate_values" ;
     dcterms:description "by (i) use of explicit deﬁnition ofthe allowed values fora datatype, (ii) syntactic rules [19], (iii) detecting whetherthe data conforms to the speciﬁc RDF pattern and that the“types” are deﬁned forspeciﬁc resources[36],(iv) useof different outlier techniques and clustering for detectingwrong values [64]" .
 
-dqv:SV3_no_malformed_datatype_literals a dqv:Metric ;
+dq:SV3_no_malformed_datatype_literals a dqv:Metric ;
     rdfs:label "SV3_no_malformed_datatype_literals" ;
     dcterms:description "detection ofill-typed literals, which do not abide by thelexical syntax for their respective datatype that can occurif a value is (i) malformed, (ii) is a member of an incom-patible datatype [17,30]" .
 
-dqv:T1_trustworthiness_of_statements a dqv:Metric ;
+dq:T1_trustworthiness_of_statements a dqv:Metric ;
     rdfs:label "T1_trustworthiness_of_statements" ;
     dcterms:description "computing statementtrust values based on:(i) prove-nance information which can be either unknown or avalue in the interval [−1,1] where 1: absolute belief,−1: absolute disbelief and 0: lack of belief/disbelief [17,27] (ii) opinion-based method, which use trust annota-tions made by severalindividuals[22,27](iii) prove-nanceinformation and trustannotationsin SemanticWeb-based social-networks [23](iv) annotating tripleswith provenance data and usage of provenance historyto evaluate the trustworthiness of facts [15]" .
 
-dqv:T2_trustworthiness_through_reasoning a dqv:Metric ;
+dq:T2_trustworthiness_through_reasoning a dqv:Metric ;
     rdfs:label "T2_trustworthiness_through_reasoning" ;
     dcterms:description "using annotations for data to encode two facets ofin-formation [11]: (i) blacklists (indicates thatthe referentdata is known to be harmful)(ii) authority (a booleanvalue which uses the Linked Data principles to conser-vatively determine whether or notinformation can betrusted)" .
 
-dqv:T3_trustworthinessofstatementsdatasets_and_rules a dqv:Metric ;
+dq:T3_trustworthinessofstatementsdatasets_and_rules a dqv:Metric ;
     rdfs:label "T3_trustworthinessofstatementsdatasets_and_rules" ;
     dcterms:description "using trust ontologies that assigns trust values that canbe transferred from known to unknown data using:(i)content-based methods (from content orrules) and (ii)metadata-based methods(based on reputation assign-ments, user ratings, and provenance, rather than the con-tent itself) [32]" .
 
-dqv:T4_trustworthiness_of_a_resource a dqv:Metric ;
+dq:T4_trustworthiness_of_a_resource a dqv:Metric ;
     rdfs:label "T4_trustworthiness_of_a_resource" ;
     dcterms:description "computing trust values between two entities through apath by using: (i) a propagation algorithm based on sta-tisticaltechniques(ii)in case there are several paths,trust valuesfrom all paths are aggregated based on aweighting mechanism [59]" .
 
-dqv:T5_trustworthinessoftheinformationprovider a dqv:Metric ;
+dq:T5_trustworthinessoftheinformationprovider a dqv:Metric ;
     rdfs:label "T5_trustworthinessoftheinformationprovider" ;
     dcterms:description "computing trustworthiness ofthe information providerby:(i)constructionofdecisionnetworksinformedby provenance graphs[20](ii)checking whethertheprovider/contributoriscontainedinalistoftrustedproviders [8]" .
 
-dqv:T6_trustworthinessofinformationpro-vided_content_trust a dqv:Metric ;
+dq:T6_trustworthinessofinformationpro-vided_content_trust a dqv:Metric ;
     rdfs:label "T6_trustworthinessofinformationpro-vided_content_trust" ;
     dcterms:description "checking contenttrust based on associations (e.g. any-thing having a relationship to a resource such as authorofthe dataset)thattransferstrustfrom contentto re-sources [21]" .
 
-dqv:T7_reputation_of_the_dataset a dqv:Metric ;
+dq:T7_reputation_of_the_dataset a dqv:Metric ;
     rdfs:label "T7_reputation_of_the_dataset" ;
     dcterms:description "assignment of explicit trust ratings to the dataset by hu-mans or analyzing external links or page ranks [45]" .
 
-dqv:TI1_freshness_of_datasets_based_on_cur-rency_and_volatility a dqv:Metric ;
+dq:TI1_freshness_of_datasets_based_on_cur-rency_and_volatility a dqv:Metric ;
     rdfs:label "TI1_freshness_of_datasets_based_on_cur-rency_and_volatility" ;
     dcterms:description "currencymax{0, 1 −}volatility[28], which gives a value in a continuous scale from0 to 1, where score of 1 implies thatthe data is timelyand 0 means it is completely outdated thus unacceptable.In the formula, volatility is the length oftime the dataremains valid [19] and currency is the age ofthe datawhen delivered to the user [17,45,55]" .
 
-dqv:TI2_freshness_of_datasets_based_on_theirdata_source a dqv:Metric ;
+dq:TI2_freshness_of_datasets_based_on_theirdata_source a dqv:Metric ;
     rdfs:label "TI2_freshness_of_datasets_based_on_theirdata_source" ;
     dcterms:description "detecting freshness of datasets based on their data sourceby measuring the distance between last modiﬁed time ofthe data source and last modiﬁed time of the dataset [19,44]" .
 
-dqv:U1_human-readable_labelling_of_classesproperties_and_entities_as_well_as_pres-ence_of_metadata a dqv:Metric ;
+dq:U1_human-readable_labelling_of_classesproperties_and_entities_as_well_as_pres-ence_of_metadata a dqv:Metric ;
     rdfs:label "U1_human-readable_labelling_of_classesproperties_and_entities_as_well_as_pres-ence_of_metadata" ;
     dcterms:description "detection of human-readable labelling of classes, prop-erties and entities as well as indication of metadata (e.g.name, description, website) of a dataset [17,18,31]" .
 
-dqv:U2_indication_of_one_or_more_exemplaryURIs a dqv:Metric ;
+dq:U2_indication_of_one_or_more_exemplaryURIs a dqv:Metric ;
     rdfs:label "U2_indication_of_one_or_more_exemplaryURIs" ;
     dcterms:description "detect whether the pattern of the URIs is provided [18]" .
 
-dqv:U3_indication_of_a_regular_expression_thatmatches_the_URIs_of_a_dataset a dqv:Metric ;
+dq:U3_indication_of_a_regular_expression_thatmatches_the_URIs_of_a_dataset a dqv:Metric ;
     rdfs:label "U3_indication_of_a_regular_expression_thatmatches_the_URIs_of_a_dataset" ;
     dcterms:description "detect whetheraregularexpression that matchestheURIs is present [18]" .
 
-dqv:U4_indication_of_an_exemplary_SPARQLquery a dqv:Metric ;
+dq:U4_indication_of_an_exemplary_SPARQLquery a dqv:Metric ;
     rdfs:label "U4_indication_of_an_exemplary_SPARQLquery" ;
     dcterms:description "detect whether examples of SPARQL queries are pro-vided [18]" .
 
-dqv:U5_indication_of_the_vocabularies_used_inthe_dataset a dqv:Metric ;
+dq:U5_indication_of_the_vocabularies_used_inthe_dataset a dqv:Metric ;
     rdfs:label "U5_indication_of_the_vocabularies_used_inthe_dataset" ;
     dcterms:description "checking whetheralistofvocabulariesusedinthedataset is provided [18]" .
 
-dqv:U6_provisionof_messageboardsandmailing_lists a dqv:Metric ;
+dq:U6_provisionof_messageboardsandmailing_lists a dqv:Metric ;
     rdfs:label "U6_provisionof_messageboardsandmailing_lists" ;
     dcterms:description "checking the effectiveness and the efﬁciency of the us-age of the mailing list and/or the message boards [18]" .
 
-dqv:V1_provision_of_the_data_in_differentserialization_formats a dqv:Metric ;
+dq:V1_provision_of_the_data_in_differentserialization_formats a dqv:Metric ;
     rdfs:label "V1_provision_of_the_data_in_differentserialization_formats" ;
     dcterms:description "checking whether data is available in different serializationformats [18]" .
 
-dqv:V2_provision_ofthe_data_in_variouslanguages a dqv:Metric ;
+dq:V2_provision_ofthe_data_in_variouslanguages a dqv:Metric ;
     rdfs:label "V2_provision_ofthe_data_in_variouslanguages" ;
     dcterms:description "checking whetherdataisavailableindifferentlan-guages [18]" .
 
 dqv:Dimension a dqv:Dimension,
         owl:Class ;
     rdfs:label "Dimension" ;
-    dqv:inDimension dqv:Abr_Metric ;
+    dq:inDimension dq:Abr_Metric ;
     rdfs:comment "A high-level categorization of data quality aspects." .
 
 dqv:Metric a owl:Class ;
